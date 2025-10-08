@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function RegisterPage() {
     const router = useRouter();
     const apiUrl = process.env.NEXT_PUBLIC_API_URL; // your API base URL
-    const registerUrl = 'api/register'; // endpoint path
+    const registerUrl = '/register'; // endpoint path
     const [fname, setFname] = useState('');
     const [lname, setLname] = useState('');
     const [email, setEmail] = useState('');
